@@ -1,0 +1,288 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 665px;
+    line-height: 1.5;
+}
+
+.paragraph h4 {
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.paragraph p {
+    color: rgb(194, 194, 194);
+}
+
+/*......... first paragraph .................*/
+
+.copyright {
+    font-size: 140px;
+    color: hsl(171deg 66% 44%);
+    text-align: center;
+    padding-top: 100px;
+    background-image: url("/images/bg-header-desktop.png");
+    padding-bottom: 100px;
+}
+
+.container .first {
+    margin-top: -100px;
+}
+
+.container .first h4 {
+    font-size: 40px;
+}
+
+.button {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.button div {
+    margin: 25px 10px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: blanchedalmond;
+    box-shadow: 3px 3px 11px 0px #00000069;
+    font-weight: 600;
+    color: white;
+}
+
+.button div:first-of-type {
+    background-color: hsl(171deg 66% 44%);
+}
+
+.button div:last-of-type {
+    background-color: hsl(233deg 100% 69%);
+}
+
+/*......... third paragraph .................*/
+.tv {
+    display: flex;
+    margin: 100px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tv div img {
+    margin-right: 80px;
+}
+
+.tv .paragraphs {
+    width: 200px;
+    margin-right: 50px;
+}
+
+.tv .paragraphs .paragraph {
+    width: 400px;
+    text-align: left;
+}
+
+.tv .paragraphs .paragraph h4 {
+    font-size: 20px;
+}
+
+/*......... fourth paragraph .................*/
+.img {
+    margin: 100px auto 100px 15%;
+}
+
+/*......... fivth paragraph .................*/
+.list .container {
+    display: flex;
+}
+
+.list .container div {
+    margin: 80px 15px;
+    width: 320px;
+}
+
+.list .container div:nth-child(1) img {
+    margin-bottom: -9px;
+}
+
+.list .container div img {
+    margin: 0 50%;
+}
+
+.list .container .paragraph {
+    margin: 10px;
+}
+
+.list .container .paragraph h4 {
+    font-size: 20px;
+}
+
+.list .container .paragraph p {
+    font-size: 15px;
+}
+
+/*......... sixth paragraph .................*/
+
+.company .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.company .container img {
+    padding: 20px;
+}
+
+/*......... last paragraph .................*/
+
+.footer {
+    background-color: hsl(220deg 18% 97%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer .container {
+    padding: 60px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .container i {
+    color: hsl(171deg 66% 44%);
+    font-size: 50px;
+}
+
+.footer .container .lists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 106px;
+    width: 440px;
+}
+
+.footer .container .lists div {
+    font-weight: 600;
+    color: rgb(158, 157, 157);
+    padding: 16px;
+}
+
+.footer .container div:last-of-type img {
+    margin-left: 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*................. for mobile ...............*/
+
+@media (max-width: 376px) {
+    .container {
+        width: 375px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .copyright {
+        background-image: url("/images/bg-header-mobile.png");
+        width: 375px;
+    }
+
+    .tv {
+        width: 300px;
+        margin-left: 35px;
+    }
+
+    .paragraph {
+        width: 300px;
+    }
+
+    .paragraph h4 {
+        font-size: 20px;
+    }
+
+    .paragraph .first h4 {
+        font-size: 30px;
+    }
+
+    .tv .paragraphs {
+        margin-right: auto;
+    }
+
+    .tv .paragraphs .paragraph {
+        text-align: center;
+        margin-top: 75px;
+        width: 300px;
+    }
+
+    .tv div img {
+        margin-right: 0;
+        width: 300px;
+    }
+
+    .img img {
+        width: 300px;
+    }
+
+    .list .container {
+        flex-wrap: wrap;
+    }
+
+    .list .container div {
+        margin: 40px 15px;
+        width: 300px;
+    }
+
+    .company .container {
+        margin-top: 50px;
+    }
+
+    .company .container img {
+        margin: 40px auto;
+    }
+
+    .footer {
+        width: 375px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .container .lists {
+        height: auto;
+        width: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
